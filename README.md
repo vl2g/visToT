@@ -34,7 +34,7 @@ cd data_wikilandmark
 
 **Image Feature Extraction**
 ```bash
-python extract_swin_features.py --input_dir ./images/ --output_dir ./image_features/
+python extract_swin_features.py --image_dir ./images/ --output_dir ./image_features/
 ```
 
 **Prepare dataset**
