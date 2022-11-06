@@ -80,4 +80,4 @@ This implementation is based on the code provided by [https://github.com/yxuansu
 <br>Swin Transformer used for feature extraction was provided by [https://huggingface.co/docs/transformers/model_doc/swin](https://huggingface.co/docs/transformers/model_doc/swin).
 
 ## License  
-This code is released under the [MIT license]().
+This code is released under the [MIT license](./LICENSE.md).
