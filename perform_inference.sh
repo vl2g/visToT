@@ -1,0 +1,16 @@
+CUDA_VISIBLE_DEVICES=0,1 python3 ./VT3/perform_inference.py\
+    --train_table_text_path ./data_wikilandmark/test/wikilandmark_test_table.txt\
+    --train_image_data_path ./data_wikilandmark/test/test_image_data.json\
+    --train_reference_sentence_path ./data_wikilandmark/test/wikilandmark_test_reference.txt\
+    --dev_table_text_path ./data_wikilandmark/test/wikilandmark_test_table.txt\
+    --dev_image_data_path ./data_wikilandmark/test/test_image_data.json\
+    --dev_reference_sentence_path ./data_wikilandmark/test/wikilandmark_test_reference.txt\
+    --dev_reference_path ./data_wikilandmark/test/processed_wikilandmark_test_data.jsonl\
+    --special_token_path ./data_wikilandmark/wikilandmark_col_header_vocab.txt\
+    --pretrained_ckpt_path ./VT3/output/finetune/best-checkpoint.ckpt\
+    --image_feat_path ./data_wikilandmark/image_features\
+    --output_path ./VT3/output/finetune/\
+    --feat_dim 1536\
+    --max_table_len 256\
+    --max_tgt_len 110\
+    --batch_size 100
